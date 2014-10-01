@@ -6,5 +6,4 @@
 #
 # Examples below:
 
-default[:packages] = [{:name => "app-misc/wkhtmltopdf-bin", :version => "0.10.0_beta5"},
-                       {:name => "dev-util/lockrun", :version => "2-r1"}]
+default[:packages] = [{:name => "x11-libs/libXext", :version => "1.3.1"}, {:name => "x11-libs/libXrender", :version => "0.9.7"}]
