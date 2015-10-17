@@ -1,0 +1,7 @@
+#nginx_cors/templates/default/custom.conf.erb
+
+location ~ ^/(assets|stylesheets)/ {
+    if ($request_filename ~ (ttf|ttc|otf|eot|woff)$) {
+        add_header Access-Control-Allow-Origin *;
+    }
+}
