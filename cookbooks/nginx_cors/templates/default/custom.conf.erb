@@ -5,3 +5,9 @@ location ~ ^/(assets|stylesheets)/ {
         add_header Access-Control-Allow-Origin *;
     }
 }
+
+location ^~ /(assets|stylesheets)/ {
+    if ($request_filename ~ (ttf|ttc|otf|eot|woff)$) {
+        add_header Access-Control-Allow-Origin *;
+    }
+}
