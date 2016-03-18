@@ -117,7 +117,7 @@ require_recipe "packages"
 #include_recipe "magento"
 
 include_recipe "wkhtmltopdf"
-include_recipe "whenever"
+#include_recipe "whenever"
 
 #enable Extension modules for a given Postgresql database
 # if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
