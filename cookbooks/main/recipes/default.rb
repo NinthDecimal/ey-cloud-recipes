@@ -9,8 +9,6 @@ include_recipe "nginx_cors"
 
 include_recipe "delayed_job"
 
-include_recipe "paperclip"
-
 # uncomment to turn on thinking sphinx 2/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
 # include_recipe "sphinx"
 
